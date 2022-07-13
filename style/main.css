@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  overflow: hidden;
+  position: fixed;
+}
+body * {
+  font-family: "Montserrat", sans-serif;
+}
+
+.right {
+  display: grid;
+  grid-template-rows: 1fr 7fr;
+}
+.right .r_top {
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.right .r_top .r_chathead {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+}
+.right .r_top .r_chathead .me {
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+.right .r_top .r_chathead .me:hover {
+  background-color: #000;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.right .r_top .r_chathead h2 {
+  grid-column: 2;
+  text-align: center;
+}
+.right .r_top .r_chathead .r_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.right .r_top .r_chathead .r_icons .r_icons_1 {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.right .r_top .r_chathead .r_icons .r_icons_1:hover {
+  background-color: #e2e1e1;
+  cursor: pointer;
+}
+.right .r_top .r_chathead .r_icons .r_icons_1 > * {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 28px;
+  height: 28px;
+}
+.right .r_top .r_chathead .r_icons .r_icons_2 {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+.right .r_top .r_chathead .r_icons .r_icons_2:hover {
+  background-color: #e2e1e1;
+  cursor: pointer;
+}
+.right .r_top .r_chathead .r_icons .r_icons_2 > * {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 28px;
+  height: 28px;
+}
+.right .r_search {
+  display: grid;
+  place-items: center;
+}
+.right .r_search * > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 28px;
+  height: 28px;
+}
+.right .r_search .actual_search {
+  background-color: #e2e1e1;
+  padding: 0em 3em;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  place-items: center;
+}
+.right .r_search .actual_search input {
+  border: 0;
+  padding: 1em;
+  background: #e2e1e1;
+  outline: none;
+}
+.right .r_bottom {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+.right .r_bottom .r_groups {
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.right .r_bottom .r_groups img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.right .r_bottom .r_groups .r_info {
+  margin-top: 0.7em;
+  margin-left: 1em;
+}
+.right .r_bottom .r_groups .r_info h3, .right .r_bottom .r_groups .r_info h5 {
+  margin: 0;
+}
+.right .r_bottom .r_groups:hover {
+  background-color: #e2e1e1;
+  border-radius: 25px;
+}
+
+.main {
+  background-color: blue;
+}
+
+.left {
+  background-color: gray;
+}/*# sourceMappingURL=main.css.map */
